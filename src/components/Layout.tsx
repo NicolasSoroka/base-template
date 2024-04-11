@@ -1,12 +1,11 @@
-import React from 'react'
-
 const Layout = ({ children }) => {
   return (
-    <div>
-      <h2>Layout here</h2>
-      {children}
+    <div className="container mx-auto flex h-screen flex-col justify-between">
+      <header>test header</header>
+      <main className="flex h-full ">{children}</main>
+      <footer>test footer</footer>
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
